@@ -19,17 +19,17 @@ const Header = () => {
                         <h1 className='logo-font text-light'>TRAVEL-VALLY</h1>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle className="bg-info" aria-controls="navbarScroll" />
+                    <Navbar.Toggle className="bg-light" aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
 
-                        <Nav className="ms-auto my-2  me-3 my-lg-0"
+                        <Nav className="mx-auto my-2  me-3 my-lg-0"
                             style={{ maxHeight: '100px' }}
                             navbarScroll>
 
 
                             <Link className="linkStyle" to="/home">Home</Link>
                             <Link className="linkStyle" to="/products">All Plans</Link>
-
+                            <Link className='linkStyle' to="/contact">Contact</Link>
 
                             {user.email && <Link className="linkStyle" to="/dashboard">DashBoard</Link>}
 
@@ -41,7 +41,7 @@ const Header = () => {
                         </Nav>
                         <div className="d-flex">
                             {
-                                user?.email && <div><img className="rounded-circle me-3" width="40px" src={user.photoURL} alt="" /><span className="me-2">{user.displayName}</span></div>
+                                user?.email && <div><img className="rounded-circle me-3" width="40px" src={user.photoURL} alt="" /><span className="me-2 text-danger">{user.displayName}</span></div>
                             }
 
 
@@ -49,7 +49,7 @@ const Header = () => {
                                 user?.email ? <Button className="btn" variant="warning" onClick={logOut}>LogOut</Button>
                                     :
                                     <Link to="/login">
-                                        <Button className="btn" variant="success">Login/Register</Button>
+                                        <Button className="btn" variant="danger">Login/Register</Button>
                                     </Link>
                             }
                         </div>

@@ -1,11 +1,10 @@
 .footer {
-    background-color: #112509;
     padding: 20px;
     color: white;
     text-align: left;
 }
 .brand {
-    color: rgb(68, 187, 74);
+    color: rgb(221, 105, 105);
     text-transform: uppercase;
 }
 

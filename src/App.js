@@ -20,6 +20,7 @@ import Ratings from './Components/Ratings/Ratings';
 import DashBoard from './Components/DashBoard/DashBoard';
 import ServicesSlice from './Components/ServicesSlice/ServicesSlice';
 import MyOrders from './Components/MyOrders/MyOrders';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -44,7 +45,9 @@ function App() {
             </Route>
 
 
-
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
 
 
 

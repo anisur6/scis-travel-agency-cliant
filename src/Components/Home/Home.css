@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.logo-font {
+    font-family: 'Luckiest Guy', cursive;
+}
+
 .home {
     margin: 0px;
     padding: 30px;
-    background-image: url(../../images/drone.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     height: 600px;
-    text-align: left;
 }
 .h2 h2{
     font-size: 3em;
@@ -27,8 +32,9 @@
     margin-right: 5px;
     padding: 10px 25px;
 }
-span{
-    color: rgb(100, 189, 17);
+.span{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #000000;
 }
 
 .icon i{

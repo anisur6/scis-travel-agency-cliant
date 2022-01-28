@@ -1,7 +1,6 @@
 import React from 'react';
-import { Col, Container, Row, Button, ProgressBar } from 'react-bootstrap';
+import { Col, Container, Row, Button, Card } from 'react-bootstrap';
 import './Home.css'
-import Contact from '../Contact/Contact';
 import Ratings from '../Ratings/Ratings';
 import ServicesSlice from '../ServicesSlice/ServicesSlice';
 
@@ -10,25 +9,21 @@ const Home = () => {
         <div>
             <Container fluid className="home">
                 <Row>
-                    <Col>
-                        <div>
-                            <h1 className="h2">BUY DJI DRONES & ACCESSORIES
-                                <span> IN BANGLADESH</span></h1>
-                            <h4 className="text-dark h4">COUNTRYS LARGEST HOBBY SHOP</h4>
+                    <Col className='mt-5'>
+                        <div className='text-center w-75 mx-auto'>
+                            <h1 className="h2 ">Most Popular Tour Agency
+                                <span className=' logo-font span'> IN BANGLADESH</span></h1>
+                            <h4 className="text-dark h4">COUNTRYS LARGEST Touring Agency</h4>
 
-                            <p className="p"><span>Pro level Flagship Cammera Drone.</span> A drone, in technological terms, is an unmanned aircraft. Drones are more formally known as unmanned aerial vehicles (UAVs) or unmanned aircraft systems (UASes). Essentially, in their embedded systems, working in conjunction with onboard sensors and GPS.</p>
-                            <Button size="lg" className="btn" variant="success">Explore</Button>
+                            <p className="p text-light fs-4 my-2">We provide the best service in bangladesh to our honurable cliants for chosing  the best deal for there own.</p>
+                            <Button size="lg" className="btn" variant="light">See Plans</Button>
+                            <Button size="lg" className="btn" variant="dark">More Topic</Button>
 
                         </div>
                     </Col>
-                    <Col>
-                    </Col>
-
 
 
                 </Row>
-
-
             </Container>
 
 
@@ -39,89 +34,82 @@ const Home = () => {
 
                 <Col>
 
-                    <h2 className="h2"><span>WHAT</span> WE DO</h2>
+                    <h2 className="h2 logo-font"><span className='span'>WHAT</span> WE DO</h2>
 
                     <hr />
                 </Col>
 
-                <Row className="my-4">
-
-                    <Col md={6} className="mt-5">
-                        <Row className="text-start">
-
-                            <div className="d-flex mt-3">
-                                <Col md={3}>
-
-                                    <div className="icon">
-                                        <i class="fas fa-shipping-fast"></i>
-                                    </div>
-
-                                </Col>
-                                <Col md={9}>
-                                    <h6>Fast Delivary in Citites</h6>
-                                    <p>We provide first delivary to our honurable customers i citites area. for this service you have to pay extra money.</p>
-                                </Col>
-                            </div>
+                <Row className="my-4 ">
 
 
 
-                            <div className="d-flex mt-3">
-                                <Col md={3}>
-
-                                    <div className="icon">
-                                        <i class="far fa-handshake"></i>
-                                    </div>
-
-                                </Col>
-                                <Col md={9}>
-                                    <h6>Carrer With Us</h6>
-                                    <p>we would like to welcome new user to make our brand promote to other. for this any one can get the oportunity to affilite.</p>
-                                </Col>
-                            </div>
-
-
-
-
-                            <div className="d-flex mt-3">
-                                <Col md={3}>
-
-                                    <div className="icon">
-                                        <i class="fas fa-gifts"></i>
-                                    </div>
-
-                                </Col>
-                                <Col md={9}>
-                                    <h6>Gifts for our lucky Customers</h6>
-                                    <p>In different occan we provide gifts on many drones combo offer. In offer customers gets gift and havey discount.</p>
-                                </Col>
-                            </div>
-
-                        </Row>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-info'><i class="fas fa-ticket-alt"></i></span>
+                                <Card.Title className='text-center fw-bold'>Online Ticket Booking</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-danger'><i class="fas fa-check-circle"></i></span>
+                                <Card.Title className='text-center fw-bold'>Correct Info</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-success'><i class="fas fa-user-tag"></i></span>
+                                <Card.Title className='text-center fw-bold'>Referal Discount</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-secondary'><i class="fas fa-bus-alt"></i></span>
+                                <Card.Title className='text-center fw-bold'>Bus tickets</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-warning'><i class="fas fa-plane-departure"></i></span>
+                                <Card.Title className='text-center fw-bold'>Air Tickets</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4}>
+                        <Card style={{ width: '18rem' }} className=' shadow border-0 my-3'>
+                            <Card.Body>
+                                <span className='fs-1 text-info'><i class="fas fa-vihara"></i></span>
+                                <Card.Title className='text-center fw-bold'>Tour Visa</Card.Title>
+                                <Card.Text>
+                                    For booking online tickets you can just try our app and book your ticket.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Col>
 
-                    <Col md={6}>
-
-
-                        <div className="my-5">
-                            <h5 className="h5">Sales Service</h5>
-                            <ProgressBar animated striped variant="success" now={80} />
-                        </div>
-
-                        <div className="my-5">
-                            <h5 className="h5">Marcketing</h5>
-                            <ProgressBar animated striped variant="info" now={85} />
-                        </div>
-
-                        <div className="my-5">
-                            <h5 className="h5">Parts Available</h5>
-                            <ProgressBar animated striped variant="primary" now={95} />
-                        </div>
-
-                        <div className="my-5">
-                            <h5 className="h5">Customer Care</h5>
-                            <ProgressBar animated striped variant="warning" now={82} />
-                        </div>
-                    </Col>
 
 
                 </Row>
@@ -136,11 +124,75 @@ const Home = () => {
 
             {/* services section start */}
 
-            <Container className="homecourse">
-                <h2 className="h2 my-3">Feature <span>Products</span></h2>
-                <p>Below you will find latest products from our most popular drone manufacturers and categories.</p>
-                <hr />
-                <ServicesSlice></ServicesSlice>
+            <Container fluid className="homecourse  my-3">
+                <Row className='p-2'>
+                    <Col md={9} className=''>
+                        <h2 className='text-start fw-bold ms-4'>Recent <span> Blogs</span></h2>
+                        <hr  className='ms-4 w-75'/>
+                        <ServicesSlice></ServicesSlice>
+                    </Col>
+                    <Col md={3}>
+                        <h2 className='text-start fw-bold'>Top Ratted Spots</h2>
+                        <hr />
+                        <br />
+
+                        <Card style={{ width: '18rem' }} className='border-0 shadow my-4'>
+                            <Card.Img variant="top" src="https://www.baldhiker.com/wp-content/uploads/2022/01/ilkley-moor-dog.jpg" />
+                            <Card.Body className='text-start'>
+                                <Card.Title>Walks On Ilkley Moor, Baht ‘At</Card.Title>
+                                <Card.Text className='text-secondary '>
+                                    Walks on Ilkley Moor, Yorkshire, I find, are some of the most refreshing.....
+                                </Card.Text>
+                                <Button variant="warning">See More</Button>
+                            </Card.Body>
+                        </Card>
+
+                        <Card style={{ width: '18rem' }} className='border-0 shadow my-4'>
+                            <Card.Img variant="top" src="https://www.baldhiker.com/wp-content/uploads/2022/01/The-War-Memorial-Victoria-Embankment.jpg" />
+                            <Card.Body className='text-start'>
+                                <Card.Title>The Victoria Embankment</Card.Title>
+                                <Card.Text className='text-secondary '>
+                                    The Victoria Embankment in Nottingham was constructed between 1898 and 1901 with
+                                </Card.Text>
+                                <Button variant="warning">See More</Button>
+                            </Card.Body>
+                        </Card>
+                        <Card style={{ width: '18rem' }} className='border-0 shadow my-4'>
+                            <Card.Img variant="top" src="https://www.baldhiker.com/wp-content/uploads/2022/01/leftoverlook2-768x462.jpg" />
+                            <Card.Body className='text-start'>
+                                <Card.Title>Raven Rocks Hike, Bluemont, Virginia</Card.Title>
+                                <Card.Text className='text-secondary '>
+                                    Walks on Ilkley Moor, Yorkshire, I find, are some of the most refreshing.....
+                                </Card.Text>
+                                <Button variant="warning">See More</Button>
+                            </Card.Body>
+                        </Card>
+
+                        <Card style={{ width: '18rem' }} className='border-0 shadow my-4'>
+                            <Card.Img variant="top" src="https://www.baldhiker.com/wp-content/uploads/2022/01/Pontcysyllte-Aqueduct-from-above-768x511.jpg" />
+                            <Card.Body className='text-start'>
+                                <Card.Title>A Narrowboat Trip On</Card.Title>
+                                <Card.Text className='text-secondary '>
+                                    Walks on Ilkley Moor, Yorkshire, I find, are some of the most refreshing.....
+                                </Card.Text>
+                                <Button variant="warning">See More</Button>
+                            </Card.Body>
+                        </Card>
+                        <Card style={{ width: '18rem' }} className='border-0 shadow my-4'>
+                            <Card.Img variant="top" src="https://www.baldhiker.com/wp-content/uploads/2022/01/Reykjavik-768x468.jpg" />
+                            <Card.Body className='text-start'>
+                                <Card.Title>A Reykjavik Food Tour</Card.Title>
+                                <Card.Text className='text-secondary '>
+                                    Walks on Ilkley Moor, Yorkshire, I find, are some of the most refreshing.....
+                                </Card.Text>
+                                <Button variant="warning">See More</Button>
+                            </Card.Body>
+                        </Card>
+
+
+
+                    </Col>
+                </Row>
             </Container>
 
 
@@ -159,12 +211,7 @@ const Home = () => {
 
 
 
-            {/* contact component  */}
-            <div>
-                <Container className="my-5">
-                    <Contact></Contact>
-                </Container>
-            </div>
+
 
 
 

@@ -7,22 +7,15 @@ import logo from './../../images/logo.png'
 const Footer = () => {
     return (
         <div>
-            <Container fluid>
+            <Container fluid className='bg-dark'>
                 <Row className="footer">
 
-                    <Col sm={6}>
+                    <Col sm={3}>
                         <div>
-                            <img
-                                src={logo}
-                                width="250"
-                                height="50"
-                                className="d-inline-block align-top"
-                                alt="React Bootstrap logo"
-                            />
+                            <h1 className='logo-font text-light'>TRAVEL-VALLY</h1>
                             <br /><br />
-                            <h4>Best Drone Shop In Banglaseh</h4>
-                            <p>Headquartered in Shenzhen, widely considered China’s Silicon Valley, DJI benefits from direct access to the suppliers, raw materials, and young, creative talent pool necessary for sustained success. </p>
-                            <hr />
+
+
                             <div>
                                 <h4 className="brand">Follow Us on</h4>
 
@@ -49,9 +42,25 @@ const Footer = () => {
                             <li>After-Sales Service Policies</li>
                             <li>FAQs</li>
                             <li>Repair Services</li>
-                            <li>Return Policy</li>
-                            <li>DJI Store APP</li>
-                            <li>Technical Support</li>
+
+
+                        </div>
+
+                    </Col>
+
+                    <Col sm={3}>
+                        <div>
+                            <h4 className="brand">Help & Support</h4>
+
+
+
+                            <li>Payment Methods</li>
+                            <li>Order Information</li>
+                            <li>Shipping & Delivery</li>
+                            <li>After-Sales Service Policies</li>
+                            <li>FAQs</li>
+                            <li>Repair Services</li>
+
 
                         </div>
 
@@ -66,7 +75,7 @@ const Footer = () => {
                             <div>
                                 <input className="w-100 m-2 p-2" type="text" name="" placeholder="Enter Your Email" id="" /><br />
 
-                                <Button className="m-2 p-2  w-100 text-dark fw-bold border-0">SUBSCRIBE</Button>
+                                <Button className="m-2 p-2 btn btn-danger  w-100 text-light  fw-bold border-0">SUBSCRIBE</Button>
                             </div>
                         </div>
                     </Col>
