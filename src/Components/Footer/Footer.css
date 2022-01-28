@@ -1,0 +1,18 @@
+.footer {
+    background-color: #112509;
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+.brand {
+    color: rgb(68, 187, 74);
+    text-transform: uppercase;
+}
+
+.footer-icon {
+    font-size: 35px;
+}
+
+.footer-end {
+    text-align: center;
+}

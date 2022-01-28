@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.logo-font {
+    font-family: 'Luckiest Guy', cursive;
+}
+.brandStyle {
+    font-weight: bolder;
+    font-size: 23px;
+    color: rgb(72, 224, 238)!important;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.linkStyle {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+#collasible-nav-dropdown{
+    color: rgb(68, 187, 74);
+    font-size: 18px;
+    
+}
+
+.navTitle {
+    color: rgb(68, 187, 74);
+    margin: 5px;
+    font-weight: bold;
+}

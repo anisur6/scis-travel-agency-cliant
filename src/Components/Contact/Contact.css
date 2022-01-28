@@ -1,0 +1,52 @@
+.contactBase {
+    padding: 10px;
+}
+
+
+.contact {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.sideImg{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.contact label {
+font-size: 22px;
+font-weight: bold;
+color: black;
+}
+
+
+
+/* mobile device style  */
+
+@media screen and (max-width: 1440px) {
+    .sideImg img{
+        height: 300px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .sideImg img{
+        height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .sideImg img{
+        height: 150px;
+    }
+  }
